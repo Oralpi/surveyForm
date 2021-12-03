@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="ko" >
+<head>
+  <meta charset="UTF-8">
+  <title>설문 조사 페이지</title>
+  <link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+<div class="container">
+  <header class="header">
+    <h1 id="title" class="text-center">코로나바이러스감염증-19 백신 접종 여부 조사</h1>
+    <p id="description" class="description text-center">
+      시간을 내주셔서 감사합니다.
+    </p>
+  </header>
+  <form id="survey-form">
+    <div class="form-group">
+      <p>지역</p>
+      <select id="dropdown" name="role" class="form-control" required>
+        <option disabled selected value>지역을 선택하세요.</option>
+        <option value="seoul">서울특별시</option>
+        <option value="busan">부산광역시</option>
+        <option value="daegu">대구광역시</option>
+        <option value="incheon">인천광역시</option>
+        <option value="gwangju">광주광역시</option>
+        <option value="daejeon">대전광역시</option>
+        <option value="ulsan">울산광역시</option>
+        <option value="sejong">세종특별자치시</option>
+        <option value="jeju">제주특별자치도</option>
+        <option value="gangwon">강원도</option>
+        <option value="gyeonggi">경기도</option>
+        <option value="gyeongsangnam">경상남도</option>
+        <option value="gyeongsangbuk">경상북도</option>
+        <option value="jeollanam">전라남도</option>
+        <option value="jeollabuk">전라북도</option>
+        <option value="chungcheongnam">충청남도</option>
+        <option value="chungcheongbuk">충청북도</option>
+      </select>
+    </div>
+    <div class="form-group">
+      <p>연령</p>
+      <select id="dropdown" name="role" class="form-control" required>
+        <option disabled selected value>연령대를 선택하세요.</option>
+        <option value="ten">10대</option>
+        <option value="twenty">20대</option>
+        <option value="thirty">30대</option>
+        <option value="fourty">40대</option>
+        <option value="fifty">50대</option>
+        <option value="sixty">60대</option>
+        <option value="seventy">70대</option>
+        <option value="eighty">80대</option>
+        <option value="ninety">90대</option>
+      </select>
+    </div>
+    <div class="form-group">
+      <p>백신 접종 여부</p>
+      <label>
+        <input
+          name="vaccine"
+          value="yes"
+          type="radio"
+          class="input-radio"
+          checked
+        />O</label
+      >
+      <label>
+        <input
+          name="vaccine"
+          value="no"
+          type="radio"
+          class="input-radio"
+        />X</label
+      >
+    </div>
+    <div class="form-group">
+      <p>백신 종류</p>
+      <select id="dropdown" name="role" class="form-control" required>
+        <option disabled selected value>백신 종류를 선택하세요.</option>
+        <option value="az">AZ</option>
+        <option value="pfizer">화이자</option>
+        <option value="moderna">모더나</option>
+        <option value="janssen">얀센</option>
+        <option value="noVaccine">맞지 않음</option>
+      </select>
+    </div>
+    <div class="form-group">
+      <button type="submit" id="submit" class="submit-button">
+        제출
+      </button>
+    </div>
+  </form>
+</div>
+  <script  src="./script.js"></script>
+
+</body>
+</html>
